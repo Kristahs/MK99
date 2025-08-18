@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicio Información Aduanera</title>
+  <meta charset="UTF-8">
+  <title>Notas con Prioridad</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>Estimado usuario, se ha detectado.</p>
+  <header>
+    <h1>Dashboard de Notas</h1>
+  </header>
+
+  <section id="form-section">
+    <h2>Crear Nota</h2>
+    <form id="noteForm">
+      <input type="text" id="noteText" placeholder="Escribe tu nota..." required>
+      <input type="number" id="notePriority" placeholder="Prioridad (1-100)" min="1" max="100" required>
+      <button type="submit">Agregar Nota</button>
+    </form>
+  </section>
+
+  <main>
+    <h2>Notas</h2>
+    <div id="notesContainer" class="grid-container">
+      <!-- Las notas aparecerán aquí -->
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
